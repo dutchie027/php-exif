@@ -1,0 +1,57 @@
+{
+    "name": "dutchie027/php-exif",
+    "description": "This library helps simplify the extraction of exif data out of photos",
+    "type": "library",
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.22",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.3",
+        "psalm/phar": "^5.14"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "dutchie027\\Test\\PhpExif\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dutchie027\\PhpExif\\": "src/"
+        }
+    },
+    "keywords": [
+        "EXIF",
+        "Photography",
+        "Images",
+        "Photos",
+        "PHP",
+        "Composer",
+        "Camera"
+    ],
+    "authors": [
+        {
+            "name": "Justin Rodino",
+            "email": "justin@rodino.dev"
+        }
+    ],
+    "scripts": {
+        "fix": "./vendor/bin/php-cs-fixer fix",
+        "test": "./vendor/bin/phpunit",
+        "stan": "./vendor/bin/phpstan --no-progress",
+        "psalm": "./vendor/bin/psalm.phar --show-info=true",
+        "runall": [
+            "@fix",
+            "@test",
+            "@stan"
+        ]
+    },
+    "scripts-descriptions": {
+        "test": "Runs phpunit tests",
+        "fix": "Runs PHP-CS Fixer",
+        "stan": "Runs phpstan to check standards",
+        "runall": "Runs all tests (fixer, phpunit, phpstan)"
+    }
+}
