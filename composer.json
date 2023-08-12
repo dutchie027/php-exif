@@ -1,6 +1,6 @@
 {
-    "name": "dutchie027/php-exif",
-    "description": "This library helps simplify the extraction of exif data out of photos",
+    "name": "dutchie027/exif-cards",
+    "description": "This library helps simplify the extraction of exif data out of photos. It also has support to turn them in to simple HTML cards",
     "type": "library",
     "require": {
         "php": ">=8.2"
@@ -13,13 +13,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "dutchie027\\Test\\PhpExif\\": "tests/"
+            "dutchie027\\Test\\ExifCards\\": "tests/"
         }
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Dutchie027\\PhpExif\\": "src/"
+            "Dutchie027\\ExifCards\\": "src/"
         }
     },
     "keywords": [
